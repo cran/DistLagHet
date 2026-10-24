@@ -1,0 +1,33 @@
+Package: DistLagHet
+Type: Package
+Title: Treatment Effect Estimation in Complex Designs
+Version: 0.1.0
+Authors@R: c(
+    person("Clement", "de Chaisemartin", role = c("aut"),
+           email = "chaisemartin.packages@gmail.com"),
+    person("Xavier", "D'Haultfoeuille", role = c("aut"),
+           email = "xavier.dhaultfoeuille@ensae.fr"),
+    person("Henri", "Fabre", role = c("cre", "ctb"),
+           email = "henri.fabre@ensae.fr"))
+Description: Implements estimation methods for treatment effects in complex
+    designs under parallel-trends assumptions. Based on the methodology of
+    de Chaisemartin and D'Haultfoeuille (2025)
+    <doi:10.48550/arXiv.2508.07808>.
+    Provides three model specifications: base model with K lags, full dynamics
+    model using all available periods, and interactions model with lag interaction
+    terms. Includes C++ optimizations for faster bootstrap estimation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: MASS, Rcpp (>= 1.0.0)
+LinkingTo: Rcpp, RcppEigen
+Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+Packaged: 2026-10-15 09:34:12 UTC; henrifabre
+Author: Clement de Chaisemartin [aut],
+  Xavier D'Haultfoeuille [aut],
+  Henri Fabre [cre, ctb]
+Maintainer: Henri Fabre <henri.fabre@ensae.fr>
+Repository: CRAN
+Date/Publication: 2026-10-24 11:50:07 UTC
